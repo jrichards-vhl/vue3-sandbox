@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "vue-cli-service serve --host=127.0.0.1 --port=3003 --public",
+    "build": "vue-cli-service build",
+    "tsc": "tsc"
   },
   "dependencies": {
+    "typescript": "^4.3.5",
     "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.4"
   }
 }
