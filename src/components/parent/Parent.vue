@@ -1,14 +1,19 @@
 <script>
 import Panel from '../panel/Panel.vue';
+import Button from '../button/Button.vue';
 export default {
   name: 'Parent',
   components: {
+    Button,
     Panel
   },
 }
 </script>
 
 <template>
+  <div>
+    <Button variant="variant-a">Hello world!</Button>
+  </div>
   <div :class="$style.main">
     <Panel theme="sunset">
       <p :class="$style.copy">
